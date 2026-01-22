@@ -469,3 +469,31 @@ footer {
     border-bottom: 1px solid var(--glass-border);
     padding-bottom: 10px;
 }
+
+/* Sticky Image Layout */
+.layout-sticky-side {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.sticky-image-container {
+    position: sticky;
+    top: 200px;
+    /* Adjust based on header height */
+    align-self: start;
+}
+
+@media (max-width: 768px) {
+    .layout-sticky-side {
+        grid-template-columns: 1fr;
+    }
+
+    .sticky-image-container {
+        position: static;
+        order: -1;
+        /* Show image above text on mobile */
+        margin-bottom: 20px;
+    }
+}
