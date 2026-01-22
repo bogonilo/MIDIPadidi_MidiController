@@ -319,6 +319,13 @@ footer {
     }
 }
 
+/* Instructions */
+.instructions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     h1 {
@@ -373,5 +380,9 @@ footer {
         /* Don't take full width to look better */
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .instructions-grid {
+        grid-template-columns: 1fr;
     }
 }
