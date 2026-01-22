@@ -39,6 +39,7 @@ h1 {
     font-size: 3.5rem;
     font-weight: 800;
     background: linear-gradient(135deg, #fff 0%, var(--primary) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -449,4 +450,22 @@ footer {
         transform: scale(1);
         opacity: 1;
     }
+}
+
+/* Guide Page Styles */
+.alert-box {
+    background: rgba(237, 4, 245, 0.1);
+    border-left: 4px solid var(--primary);
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.guide-text h3 {
+    color: var(--text-main);
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 10px;
 }

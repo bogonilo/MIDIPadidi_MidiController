@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Guide | MIDIPadidi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Setup Guide - MIDIPadidi">
+    <meta property="og:description" content="Detailed guide on how to connect and use MIDIPadidi.">
+    <meta property="og:image" content="assets/img/feature_graphic.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <img src="assets/img/icon.png" alt="MIDIPadidi Logo">
+                MIDIPadidi
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.lorenzo.midipadidi" class="cta-button">Get it on
+                Google Play</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Title -->
+        <section class="hero-mini">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>How to Use MIDIPadidi</h1>
+                    <p>Complete guide to connection and controls.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connection Guide -->
+        <section id="connection" style="background: var(--bg-deep);">
+            <div class="container">
+                <h2 style="text-align: left; margin-bottom: 40px;">Getting Connected</h2>
+                <div class="instructions-grid">
+                    <div class="guide-text">
+                        <h3>Step 1: USB Connection</h3>
+                        <p>To establish a MIDI connection with your computer:</p>
+                        <ol style="margin-left: 20px; color: var(--text-muted); margin-bottom: 20px;">
+                            <li>Connect your Android device to your computer using a USB cable.</li>
+                            <li>Swipe down from the top of the screen to open the Notification Shade.</li>
+                            <li>Look for a notification from <strong>Android System</strong> labeled "Charging this
+                                device via USB" (or "USB charging this device").</li>
+                            <li>Tap the notification to open <strong>USB Preferences</strong>.</li>
+                            <li>Under "Use USB for", select <strong>MIDI</strong>.</li>
+                        </ol>
+
+                        <div class="alert-box"
+                            style="background: rgba(170, 113, 184, 0.1); border-left-color: var(--secondary); margin-top: 10px;">
+                            <p><strong>Pro Tip:</strong> For a permanent setup:</p>
+                            <ol style="margin-left: 20px; margin-bottom: 0;">
+                                <li>Enable <strong>Developer Options</strong> (<a
+                                        href="https://developer.android.com/studio/debug/dev-options" target="_blank"
+                                        style="color: var(--primary);">guide here</a>).</li>
+                                <li>Go to <strong>Settings > Developer options > Default USB configuration</strong>.
+                                </li>
+                                <li>Select <strong>MIDI</strong>.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="guide-image">
+                        <img src="assets/img/usb_connection.png" alt="USB Connection Illustration"
+                            style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid var(--glass-border);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Touch Controller Guide -->
+        <section id="touch-controller" style="background: var(--dark-bg);">
+            <div class="container">
+                <h2 style="text-align: left; margin-bottom: 40px;">Using the Touch Controller</h2>
+                <div class="instructions-grid">
+                    <div class="guide-text" style="width: 100%;">
+                        <p>The Touch Surface translates your finger movements into MIDI Control Change (CC) messages,
+                            allowing for expressive real-time control of your DAW parameters.</p>
+
+                        <h3>Configuration</h3>
+                        <p>Tap the ✏️ <strong>pencil icon</strong> to open the Edit dialog:</p>
+                        <ul style="margin-left: 20px; color: var(--text-muted); margin-bottom: 20px;">
+                            <li><strong>Name Axis:</strong> Assign custom labels to X and Y axes.</li>
+                            <li><strong>Assign CC:</strong> Choose specific MIDI CC numbers.</li>
+                            <li><strong>Precision:</strong>
+                                <ul>
+                                    <li><strong>Standard (7-bit):</strong> Uses values 0-127. Compatible with all
+                                        standard CCs (0-127).</li>
+                                    <li><strong>High Precision (14-bit):</strong> Uses standard MIDI MSB/LSB pairs for
+                                        values 0-16383 (CC 0-31 only).</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <br>
+                        <h3>Mapping to your DAW</h3>
+                        <ol style="margin-left: 20px; color: var(--text-muted); margin-bottom: 20px;">
+                            <li>Enable "MIDI Map" mode in your DAW.</li>
+                            <li><strong>Touch ONCE</strong> on the area labeled "Touch to map X values". This sends a
+                                single signal for easy assignment.</li>
+                            <li>Map the signal to your desired parameter in the DAW.</li>
+                            <li>Repeat the process for the Y values when prompts.</li>
+                        </ol>
+
+                        <p>Use the 🔃 <strong>Reload</strong> icon to reset the mapping process if you need to start
+                            over.</p>
+
+                        <br>
+                        <h3>Usage</h3>
+                        <p>Simply drag your finger across the colored surface. The X and Y coordinates are sent
+                            simultaneously as MIDI data.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="logo" style="justify-content: center; margin-bottom: 20px;">
+                MIDIPadidi
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="privacy_policy.html">Privacy Policy</a>
+                <a href="mailto:midipadidi@yahoo.com">Support</a>
+                <a href="https://play.google.com/store/apps/details?id=com.lorenzo.midipadidi">Google Play</a>
+            </div>
+            <p>&copy; 2026 LoRe. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
